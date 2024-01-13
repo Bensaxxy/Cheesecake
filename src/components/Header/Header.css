@@ -1,0 +1,134 @@
+.h-container {
+    padding: 2rem 8rem;
+}
+
+.h-wrapper {
+    justify-content: space-between;
+}
+
+.logo {
+    width: 140px;
+}
+
+.navLinks {
+    gap: 1.5rem;
+    background: var(--bg-color);
+    border-radius: 4px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.h-menu {
+    gap: 9rem;
+    justify-content: space-between;
+}
+
+.h-menu a {
+    padding: 12px 10px;
+    color: white;
+    transition: 0.5s all ease-in;
+    border-radius: 4px;
+
+}
+
+.h-menu a:hover {
+    background: white;
+    color: black;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.outline-btn {
+    margin-left: 3rem;
+}
+
+.h-menu .active {
+    background: white;
+    color: black;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.h-wrapper .nav-btn {
+    padding: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--bg-color);
+    display: none;
+    opacity: 0;
+}
+
+.nav-close-btn {
+    display: none;
+}
+
+@media only screen and (max-width:1024px) {
+    .h-wrapper .nav-btn {
+        display: block;
+        opacity: 1;
+    }
+
+    .nav-close-btn {
+        display: block;
+        top: 3.5rem;
+        right: 1rem;
+        position: absolute;
+        padding: 5px;
+        font-size: 24px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+    }
+
+    .h-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        background: rgba(106, 64, 40);
+        transition: 1s;
+        transform: translateY(-100vh);
+        text-align: center;
+        padding: 10rem;
+        z-index: 10;
+    }
+
+    .h-menu .navLinks {
+        background: transparent;
+        font-size: 14px;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .responsible_nav {
+        transform: none;
+    }
+
+    .navbtn .o-btn {
+        color: white;
+        background: transparent;
+        border: 2px solid white;
+        padding: 12px 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (max-width:854px) {
+    .h-container {
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}

@@ -1,0 +1,89 @@
+/* hero section */
+.h.container {
+    padding: 2rem 8rem;
+}
+
+.hero-wrapper {
+    justify-content: space-between;
+}
+
+.btnContainer {
+    margin-top: 30px;
+    gap: 2rem;
+}
+
+.demo-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.demo-btn img {
+    width: 20px;
+}
+
+/* right hand side */
+/* .hero-wrapper .right-side {
+    background-color: red;
+} */
+
+.hero-wrapper .right-side img {
+    width: 600px;
+    height: 420px;
+}
+
+@media only screen and (max-width:1224px) {
+    .hero-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-wrapper img {
+        display: none;
+    }
+
+    .btnContainer {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .btnContainer {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .left-side .hero-title {
+        font-size: 2.5rem;
+        line-height: 40px;
+    }
+
+    .hero-wrapper .right-side img {
+        display: block;
+        width: 340px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .btnContainer {
+        flex-direction: column;
+    }
+
+    .left-side .hero-title {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    .hero-wrapper .right-side img {
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-wrapper .right-side img {
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+}

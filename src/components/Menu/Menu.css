@@ -1,0 +1,116 @@
+.m-container {
+    background: rgba(106, 64, 40, 0.9);
+    padding: 2rem 8rem;
+}
+
+.m-container .view-more {
+    justify-content: end;
+    font-size: 16px;
+    color: rgba(255, 248, 225, 1);
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.m-container .view-more img {
+    width: 10px;
+}
+
+.m-wrapper {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.menu {
+    padding-top: 3rem;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-family: Inika;
+    font-size: 46px;
+}
+
+.menu-card {
+    margin: 36px 0;
+    width: 27rem;
+    gap: 20px;
+    background: rgba(255, 248, 225, 1);
+    padding: 24px 20px;
+    border-radius: 30px;
+    transition: 0.5s ease-out;
+    box-shadow: 4px 4px 12px rgba(82, 55, 40, 0.5);
+}
+
+.menu-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 5px 5px 14px rgba(82, 55, 40, 0.5);
+}
+
+.menu-card img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.rate-amount {
+    font-weight: 700;
+    font-family: inter;
+    font-size: 18px;
+    color: rgba(116, 85, 69, 1);
+}
+
+.card-rate {
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
+.card-rate .rate-img {
+    width: 80px;
+}
+
+@media only screen and (max-width:1224px) {
+    .m-container {
+        padding: 2rem 2rem;
+    }
+
+    .m-wrapper {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .m-container {
+        padding: 2rem 2rem;
+    }
+
+    .menu-card {
+        margin: 36px 0;
+        width: 22rem;
+        gap: 18px;
+        padding: 20px 18px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+
+    .menu-card {
+        margin: 36px 0;
+        width: 20rem;
+        gap: 18px;
+        padding: 20px 14px;
+    }
+
+    .menu-card img {
+        width: 110px;
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        padding: 2rem 0;
+        font-size: 36px;
+    }
+
+    .view-more span {
+        font-size: 14px;
+    }
+}
